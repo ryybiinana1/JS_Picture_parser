@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Картинки: Поиск и Скачивание</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Поиск и скачивание картинок</h1>
+      <p>Введите запрос для поиска изображений и настройте параметры скачивания.</p>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <h2>Поиск</h2>
+        <label for="searchQuery">Запрос:</label>
+        <input type="text" id="searchQuery" placeholder="Введите запрос..." />
+        <button id="searchBtn">Найти</button>
+      </section>
+
+      <section class="results-section">
+        <h2>Результаты</h2>
+        <p>Найдено картинок: <span id="foundCount">0</span></p>
+      </section>
+
+      <section class="settings-section">
+        <h2>Настройки</h2>
+        <label for="savePath">Путь сохранения:</label>
+        <input type="text" id="savePath" placeholder="Введите путь..." />
+        <button id="savePathBtn">Выбрать папку</button>
+
+        <div class="radio-group">
+          <p>Размер картинки:</p>
+          <label><input type="radio" name="sizeMode" value="small" checked> Маленький</label>
+          <label><input type="radio" name="sizeMode" value="big"> Большой</label>
+        </div>
+
+        <label for="picturesAmount">Количество картинок:</label>
+        <input type="number" id="picturesAmount" min="1" placeholder="1" />
+
+        <!--<label for="pictureName">Имя файлов:</label>-->
+        <input type="hidden" id="pictureName" placeholder="Имя картинок"  />
+
+        <button id="downloadBtn">Скачать</button>
+        <div id="status"></div>
+      </section>
+    </main>
+  </div>
+  <script src="client.js"></script>
+</body>
+</html>

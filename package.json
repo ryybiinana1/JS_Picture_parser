@@ -1,0 +1,16 @@
+{
+    "name": "js_project",
+    "version": "1.0.0",
+    "description": "Приложение для поиска и скачивания картинок",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.3",
+        "cheerio": "^1.0.0",
+        "express": "^4.21.2",
+        "node-fetch": "^2.7.0"
+    }
+}
